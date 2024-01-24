@@ -1,0 +1,36 @@
+import { ReactElement } from "react";
+// layouts
+import { AppLayout } from "layouts/app-layout";
+import { ProjectSettingLayout } from "layouts/settings-layout";
+// components
+import { ProjectSettingHeader } from "components/headers";
+import { EstimatesList } from "components/estimates";
+// types
+import { NextPageWithLayout } from "types/app";
+import { useMobxStore } from "lib/mobx/store-provider";
+import { EUserWorkspaceRoles } from "constants/workspace";
+import { observer } from "mobx-react-lite";
+
+const EstimatesSettingsPage: NextPageWithLayout = observer(() => {
+  const {
+    user: { currentProjectRole },
+  } = useMobxStore();
+
+  const isAdmin = currentProjectRole === EUserWorkspaceRoles.ADMIN;
+
+  return (
+    <div className={`w-full overflow-y-auto py-8 pr-9 ${isAdmin ? "" : "pointer-events-none opacity-60"}`}>
+      <EstimatesList />
+    </div>
+  );
+});
+
+EstimatesSettingsPage.getLayout = function getLayout(page: ReactElement) {
+  return (
+    <AppLayout header={<ProjectSettingHeader title="Estimates Settings" />} withProjectWrapper>
+      <ProjectSettingLayout>{page}</ProjectSettingLayout>
+    </AppLayout>
+  );
+};
+
+export default EstimatesSettingsPage;
