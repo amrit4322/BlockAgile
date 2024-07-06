@@ -30,10 +30,10 @@ x-app-env : &app-env
     - REDIS_URL=${REDIS_URL:-redis://${REDIS_HOST}:6379/}
     # EMAIL SETTINGS - Deprecated can be configured through admin panel
     - EMAIL_HOST=${EMAIL_HOST:-smtp.gmail.com}
-    - EMAIL_HOST_USER=${EMAIL_HOST_USER:-support.plane@antiersolutions.com}
-    - EMAIL_HOST_PASSWORD=${EMAIL_HOST_PASSWORD:-S@OrtAn208}
+    - EMAIL_HOST_USER=${EMAIL_HOST_USER:-abc@gmail..com}
+    - EMAIL_HOST_PASSWORD=${EMAIL_HOST_PASSWORD:-Password abc@gmail..co}
     - EMAIL_PORT=${EMAIL_PORT:-587}
-    - EMAIL_FROM=${EMAIL_FROM:-no replyy<support.plane@antiersolutions.com>}
+    - EMAIL_FROM=${EMAIL_FROM:-no replyy<abc@gmail..com>}
     - EMAIL_USE_TLS=${EMAIL_USE_TLS:-1}
     - EMAIL_USE_SSL=${EMAIL_USE_SSL:-0}
     - DEFAULT_EMAIL=${DEFAULT_EMAIL:-captain@plane.so}

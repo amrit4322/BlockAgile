@@ -33,15 +33,15 @@
     },
     "EMAIL_HOST_USER": {
       "description": "Email host to send emails from",
-      "value": "support.plane@antiersolutions.com"
+      "value": "abc@gmail.com"
     },
     "EMAIL_HOST_PASSWORD": {
       "description": "Email host to send emails from",
-      "value": "S@OrtAn208"
+      "value": "Password"
     },
     "EMAIL_FROM": {
       "description": "Email Sender",
-      "value": "no reply<support.plane@antiersolutions.com>"
+      "value": "no reply<abc@gmail.com>"
     },
     "EMAIL_PORT": {
       "description": "The default Email PORT to use",

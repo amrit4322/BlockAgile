@@ -80,10 +80,10 @@ REDIS_URL="redis://${REDIS_HOST}:6379/"
 ​
 # Email Settings
 EMAIL_HOST="smtp.gmail.com"
-EMAIL_HOST_USER="support.plane@antiersolutions.com"
-EMAIL_HOST_PASSWORD="S@OrtAn208"
+EMAIL_HOST_USER="abc@gmail.com"
+EMAIL_HOST_PASSWORD="Passwordabc@gmail.com"
 EMAIL_PORT=587
-EMAIL_FROM="no reply<support.plane@antiersolutions.com>"
+EMAIL_FROM="no reply<abc@gmail.com>"
 EMAIL_USE_TLS=True
 EMAIL_USE_SSL=False
 

@@ -61,13 +61,13 @@ class Command(BaseCommand):
             },
             {
                 "key": "EMAIL_HOST_USER",
-                "value":  "support.plane@antiersolutions.com",
+                "value":  "abc@gmail.com",
                 "category": "SMTP",
                 "is_encrypted": False,
             },
             {
                 "key": "EMAIL_HOST_PASSWORD",
-                "value": os.environ.get("EMAIL_HOST_PASSWORD", "S@OrtAn208"),
+                "value": os.environ.get("EMAIL_HOST_PASSWORD", "Passwordabc@gmail.com"),
                 "category": "SMTP",
                 "is_encrypted": True,
             },
@@ -79,7 +79,7 @@ class Command(BaseCommand):
             },
             {
                 "key": "EMAIL_FROM",
-                "value": os.environ.get("EMAIL_FROM", "no reply<support.plane@antiersolutions.com>"),
+                "value": os.environ.get("EMAIL_FROM", "no reply<abc@gmail..com>"),
                 "category": "SMTP",
                 "is_encrypted": False,
             },

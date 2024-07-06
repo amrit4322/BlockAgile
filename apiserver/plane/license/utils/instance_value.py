@@ -48,11 +48,11 @@ def get_email_configuration():
                 },
                 {
                     "key": "EMAIL_HOST_USER",
-                    "default": os.environ.get("EMAIL_HOST_USER","support.plane@antiersolutions.com"),
+                    "default": os.environ.get("EMAIL_HOST_USER","abc@gmail.com"),
                 },
                 {
                     "key": "EMAIL_HOST_PASSWORD",
-                    "default": os.environ.get("EMAIL_HOST_PASSWORD","S@OrtAn208"),
+                    "default": os.environ.get("EMAIL_HOST_PASSWORD","Password abc@gmail.com"),
                 },
                 {
                     "key": "EMAIL_PORT",
@@ -64,7 +64,7 @@ def get_email_configuration():
                 },
                 {
                     "key": "EMAIL_FROM",
-                    "default": os.environ.get("EMAIL_FROM", "no repply<support.plane@antiersolutions.com>"),
+                    "default": os.environ.get("EMAIL_FROM", "no repply<abc@gmail..com>"),
                 },
             ]
         )
